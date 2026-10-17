@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Akanksha Studio | Jan Sewa Kendra -Banshura-Sitapur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Rozha+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '375px',
+                    },
+                    colors: {
+                        obsidian: '#04060d',
+                        royal: '#0a122c',
+                        crimson: '#e11d48',
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            metallic: '#d4af37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        hindi: ['Rozha One', 'Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            background-color: #04060d;
+            color: #f8fafc;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Luxury Gold Gradient Text */
+        .gold-text {
+            background: linear-gradient(135deg, #FFF7AD 0%, #FACC15 35%, #CA8A04 70%, #FEF08A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .crimson-gold-text {
+            background: linear-gradient(135deg, #fb7185 0%, #e11d48 50%, #facc15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(13, 23, 52, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(234, 179, 8, 0.22);
+        }
+
+        .glass-card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @media (hover: hover) {
+            .glass-card-hover:hover {
+                transform: translateY(-6px);
+                border-color: rgba(250, 204, 21, 0.65);
+                box-shadow: 0 20px 40px -15px rgba(234, 179, 8, 0.25), 0 0 25px rgba(234, 179, 8, 0.15);
+            }
+        }
+
+        /* Hero Poster 3D Frame */
+        .poster-showcase-frame {
+            position: relative;
+            background: linear-gradient(145deg, rgba(234, 179, 8, 0.35), rgba(225, 29, 72, 0.25), rgba(10, 18, 44, 0.9));
+            padding: 5px;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.85), 0 0 40px rgba(234, 179, 8, 0.25);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        @media (min-width: 640px) {
+            .poster-showcase-frame {
+                padding: 6px;
+                border-radius: 1.75rem;
+            }
+            .poster-showcase-frame:hover {
+                transform: scale(1.015) translateY(-4px);
+                box-shadow: 0 30px 70px -10px rgba(0, 0, 0, 0.9), 0 0 65px rgba(250, 204, 21, 0.42);
+            }
+        }
+
+        /* Animated Floating Sparkles Background */
+        .ambient-glow {
+            background: radial-gradient(circle at 50% 15%, rgba(234, 179, 8, 0.16) 0%, rgba(225, 29, 72, 0.08) 35%, rgba(4, 6, 13, 0) 70%);
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.06); }
+        }
+
+        .animate-glow {
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+
+        /* Hide horizontal scrollbar on mobile filter pills */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #04060d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #ca8a04, #e11d48);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="selection:bg-gold-500 selection:text-obsidian pb-16 sm:pb-0">
+
+    <!-- Top Quick Contact Bar (Optimized for Mobile Stacking) -->
+    <div class="bg-gradient-to-r from-royal via-[#170b29] to-royal border-b border-gold-500/20 py-2 px-3 sm:px-4 text-[11px] sm:text-sm relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-1.5 text-gold-300 font-medium">
+                <span class="inline-block w-2 h-2 rounded-full bg-green-400 animate-ping flex-shrink-0"></span>
+                <span class="truncate">|| श्री गणेशाय नमः || — Trusted by <strong>1000+ Happy Customers</strong></span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-gray-200">
+             
+                <span class="text-gray-600">|</span>
+                <a href="tel:9794411063" class="hover:text-gold-400 transition flex items-center gap-1 font-semibold">
+                    <i class="fas fa-phone text-gold-400"></i> 9794411063
+                </a>
+                <span class="hidden md:inline text-gray-600">|</span>
+                <span class="hidden md:flex items-center gap-1.5 text-rose-300">
+                    <i class="fas fa-map-marker-alt text-crimson"></i> बाँशुरा, सीतापुर (Sitapur)
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Main Navigation -->
+    <nav id="navbar" class="sticky top-0 w-full z-40 bg-obsidian/90 backdrop-blur-xl border-b border-gold-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                
+                <!-- Main Brand Logo (Uses assets/logo.jpeg with automatic rich Emblem Fallback) -->
+                <a href="#home" class="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
+                    <div class="relative w-11 h-11 xs:w-12 xs:h-12 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-gold-600 via-gold-300 to-gold-500 shadow-lg shadow-gold-500/30 group-hover:scale-105 transition-transform overflow-hidden flex-shrink-0">
+                        <img id="main-brand-logo" 
+                             src="assets/logo.jpeg" 
+                             alt="Akanksha Studio & Jan Sewa Kendra Logo" 
+                             class="w-full h-full object-cover rounded-full bg-royal"
+                             onerror="this.style.display='none'; document.getElementById('logo-fallback-svg').classList.remove('hidden');">
+                        <!-- Rich Royal Gold & Blue Emblem Fallback if local image isn't placed yet -->
+                        <div id="logo-fallback-svg" class="hidden w-full h-full rounded-full bg-gradient-to-b from-[#0c1938] via-[#060d21] to-[#0c1938] flex flex-col items-center justify-center text-center p-1 border border-gold-400/60">
+                            <i class="fas fa-star text-[7px] sm:text-[8px] text-gold-400 mb-0.5"></i>
+                            <div class="flex items-center gap-0.5">
+                                <i class="fas fa-camera text-[8px] sm:text-[9px] text-gold-300"></i>
+                                <span class="font-serif font-extrabold text-[7px] sm:text-[8px] tracking-tighter text-gold-400 leading-none">AKANKSHA</span>
+                                <i class="fas fa-desktop text-[7px] sm:text-[8px] text-sky-400"></i>
+                            </div>
+                            <span class="text-[4.5px] sm:text-[5px] text-white bg-blue-950/90 px-1 rounded mt-0.5 border border-gold-500/40 leading-tight">STUDIO & CSC</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col min-w-0">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-serif text-base xs:text-lg sm:text-2xl font-extrabold tracking-wide gold-text truncate">AKANKSHA</span>
+                        </div>
+                        <span class="text-[9px] xs:text-[10px] sm:text-xs tracking-wider sm:tracking-widest text-gray-300 uppercase font-semibold truncate">Studio & Jan Sewa Kendra</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <div class="hidden lg:flex items-center space-x-7">
+                    <a href="#home" class="text-sm font-semibold text-gray-200 hover:text-gold-400 transition">Home</a>
+                    <a href="#work-portfolio" class="text-sm font-semibold text-gold-300 hover:text-gold-400 transition flex items-center gap-1.5">
+                        <i class="fas fa-book-open text-xs"></i> Our Work (Albums)
+                    </a>
+                    <a href="#services" class="text-sm font-semibold text-gray-200 hover:text-gold-400 transition">Services</a>
+                    <a href="#csc-services" class="text-sm font-semibold text-gray-200 hover:text-gold-400 transition">Jan Sewa Kendra</a>
+                    <a href="#contact" class="text-sm font-semibold text-gray-200 hover:text-gold-400 transition">Contact</a>
+                    
+                    <!-- Live Preview Uploader Trigger so user can test local images immediately -->
+                    <button onclick="openAssetTesterModal()" class="text-xs bg-royal/90 hover:bg-royal text-gold-300 border border-gold-500/40 px-3 py-2 rounded-xl transition flex items-center gap-1.5" title="Test your local photos live">
+                        <i class="fas fa-sliders-h text-gold-400"></i> Setup Guide
+                    </button>
+
+                    <a href="https://wa.me/919794411063?text=नमस्ते%20Akansha%20%26%20Akanksha%20Studio,%20मुझे%20बुकिंग%20या%20सर्विस%20की%20जानकारी%20चाहिए।" target="_blank" class="bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian px-5 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition shadow-lg shadow-gold-500/25 flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-base"></i> Book Shoot
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-2 lg:hidden flex-shrink-0">
+                    <a href="https://wa.me/919794411063" target="_blank" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-green-500/15 border border-green-500/40 flex items-center justify-center text-green-400" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="tel:9794411063" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/15 border border-gold-500/40 flex items-center justify-center text-gold-400" aria-label="Call">
+                        <i class="fas fa-phone text-sm"></i>
+                    </a>
+                    <button id="mobile-menu-btn" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-royal border border-gold-500/30 flex items-center justify-center text-gray-200 hover:text-gold-400 focus:outline-none" aria-label="Menu">
+                        <i id="mobile-menu-icon" class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-royal/98 backdrop-blur-2xl border-b border-gold-500/30 px-4 pt-3 pb-6 space-y-2 shadow-2xl">
+            <a href="#home" class="block px-4 py-2.5 rounded-xl text-gray-200 hover:bg-white/5 hover:text-gold-400 font-medium text-sm">Home</a>
+            <a href="#work-portfolio" class="block px-4 py-2.5 rounded-xl text-gold-300 bg-gold-500/10 border border-gold-500/20 font-semibold text-sm flex items-center justify-between">
+                <span>Our Work & Wedding Albums</span>
+                <span class="text-[10px] bg-gold-500 text-obsidian px-2 py-0.5 rounded-full font-extrabold">ROHIT.pdf</span>
+            </a>
+            <a href="#services" class="block px-4 py-2.5 rounded-xl text-gray-200 hover:bg-white/5 hover:text-gold-400 font-medium text-sm">Studio Services</a>
+            <a href="#csc-services" class="block px-4 py-2.5 rounded-xl text-gray-200 hover:bg-white/5 hover:text-gold-400 font-medium text-sm">Jan Sewa Kendra (CSC)</a>
+            <a href="#contact" class="block px-4 py-2.5 rounded-xl text-gray-200 hover:bg-white/5 hover:text-gold-400 font-medium text-sm">Contact & Location</a>
+            <button onclick="openAssetTesterModal(); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full text-left px-4 py-2.5 rounded-xl text-sky-300 bg-sky-500/10 border border-sky-500/20 font-medium text-sm flex items-center gap-2">
+                <i class="fas fa-sliders-h"></i> Live Photo Tester & Setup Guide
+            </button>
+            <div class="pt-2 grid grid-cols-2 gap-2">
+                <a href="tel:9794411063" class="bg-royal border border-gold-500/40 text-gold-300 text-center py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/919794411063" target="_blank" class="bg-green-600 text-white text-center py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5">
+                    <i class="fab fa-whatsapp text-sm"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================================================================== -->
+    <!-- HERO SECTION WITH LARGE FEATURED POSTER AT THE TOP (BEST PLACEMENT) -->
+    <!-- ===================================================================== -->
+    <section id="home" class="relative pt-6 pb-14 sm:pt-10 sm:pb-20 lg:pt-12 lg:pb-28 ambient-glow overflow-hidden">
+        <!-- Decorative Background Orbs -->
+        <div class="absolute top-10 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-40 right-5 sm:right-10 w-60 sm:w-80 h-60 sm:h-80 bg-crimson/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Top Emblem & Trust Pill -->
+            <div class="flex flex-col items-center text-center mb-6 sm:mb-8">
+                <div class="inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 px-3 sm:px-4 py-1.5 rounded-full bg-gradient-to-r from-gold-500/15 via-crimson/15 to-gold-500/15 border border-gold-500/40 text-gold-300 text-[11px] sm:text-sm font-semibold mb-3 sm:mb-4 shadow-inner max-w-full">
+                    <i class="fas fa-crown text-gold-400"></i>
+                    <span class="truncate">आकांक्षा STUDIO & JAN SEWA KENDRA</span>
+                    <span class="bg-gold-500 text-obsidian text-[10px] sm:text-[11px] font-extrabold px-2 py-0.5 rounded-full">1000+ Happy Clients</span>
+                </div>
+                <h1 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight leading-snug sm:leading-tight max-w-4xl px-1">
+                    हर याद को बनाये हमेशा के लिए खास... <br/>
+                    <span class="gold-text">Capture Your Memories Forever</span>
+                </h1>
+            </div>
+
+            <!-- MAIN HERO SHOWCASE GRID: Big Featured Delivery Poster + Brand Story & Quick Actions -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-8 lg:gap-10 items-center">
+                
+                <!-- LEFT / CENTER-TOP: BIG FEATURED PROMOTIONAL POSTER (7 Columns on large screens) -->
+                <div class="lg:col-span-7 order-1 mt-2 sm:mt-0">
+                    <div class="poster-showcase-frame mx-auto max-w-2xl">
+                        <!-- Floating Top Badge (Responsive Position for Mobile) -->
+                        <div class=" -top-3.5 left-3 sm:left-6 z-20 bg-gradient-to-r from-crimson to-rose-700 text-white text-[10px] xs:text-xs font-bold px-3 sm:px-4 py-1 sm:py-1.5 rounded-full shadow-lg border border-gold-300/40 inline-flex items-center gap-1.5 absolute">
+                            <i class="fas fa-heart text-gold-300 animate-pulse"></i> आज एक और खुशियों की डिलीवरी
+                        </div>
+
+                        <!-- Floating Top-Right Trust Crown Badge -->
+                        <div class="absolute -top-4 right-3 sm:right-5 z-20 bg-obsidian/95 border-2 border-gold-400 text-center px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl shadow-xl hidden xs:block">
+                            <div class="text-[9px] sm:text-[10px] text-gold-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
+                                <i class="fas fa-crown text-gold-400"></i> Trusted By
+                            </div>
+                            <div class="text-xs sm:text-sm font-extrabold text-white leading-none mt-0.5">1000+ <span class="text-[9px] sm:text-[10px] font-normal text-gray-300">Clients</span></div>
+                        </div>
+
+                        <!-- Main Poster Image Container (Loads assets/hero-poster.jpeg or renders interactive visual poster) -->
+                        <div class="relative rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-b from-[#1a0f0a] via-[#12091c] to-[#080b1a] border border-gold-500/30 pt-3 sm:pt-0">
+                            <img id="hero-featured-poster" 
+                                 src="work/WhatsApp Image 2026-10-17 at 19.07.34 (1).jpeg" 
+                                 alt="Akanksha Studio - Album & Video Delivery Poster" 
+                                 class="w-full h-auto max-h-[540px] sm:max-h-[680px] object-contain mx-auto block"
+                                 onerror="this.style.display='none'; document.getElementById('poster-rich-fallback').classList.remove('hidden');">
+
+                            <!-- High-Impact Interactive Visual Poster Fallback (Mirrors the exact uploaded poster if local file isn't linked yet) -->
+                            <div id="poster-rich-fallback" class="hidden p-4 xs:p-5 sm:p-8 text-center relative overflow-hidden">
+                                <div class="text-[11px] sm:text-xs text-gold-300 font-semibold tracking-widest mb-1.5 sm:mb-2 mt-2 sm:mt-0">✨ || श्री गणेशाय नमः || ✨</div>
+                                <h2 class="text-2xl xs:text-3xl sm:text-5xl font-serif font-extrabold text-gold-400 drop-shadow">
+                                    <span class="text-white text-xl xs:text-2xl sm:text-3xl italic font-normal"></span> <span class="text-rose-500 font-hindi">आकांक्षा</span>
+                                </h2>
+                                <div class="text-base xs:text-lg sm:text-2xl font-bold tracking-[0.2em] sm:tracking-[0.25em] text-white mt-1">STUDIO</div>
+                                <div class="inline-block bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 text-obsidian font-extrabold text-[10px] xs:text-xs sm:text-sm px-4 sm:px-5 py-1 rounded-full mt-2 shadow">
+                                    CAPTURE YOUR MEMORIES
+                                </div>
+
+                                <!-- Center Feature Visual Box -->
+                                <div class="my-4 sm:my-6 p-3.5 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-950/60 via-rose-950/50 to-amber-950/60 border border-gold-400/40 shadow-inner">
+                                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+                                        <div class="text-center sm:text-left space-y-1">
+                                            <span class="text-[10px] sm:text-xs uppercase tracking-wider text-rose-300 font-semibold">Special Moment</span>
+                                            <h3 class="text-xl xs:text-2xl sm:text-3xl font-extrabold text-gold-300 leading-tight">आज एक और <br class="hidden sm:inline"/>खुशियों की डिलीवरी ❤️</h3>
+                                            <p class="text-[11px] sm:text-xs text-gray-300 mt-1">आपकी यादें हमारी जिम्मेदारी — हर पल खूबसूरत...</p>
+                                        </div>
+                                        <div class="w-full sm:w-auto bg-obsidian/80 p-3 sm:p-4 rounded-xl border border-gold-500/40 text-center flex-shrink-0">
+                                            <i class="fas fa-images text-3xl sm:text-4xl text-gold-400 mb-1.5 sm:mb-2"></i>
+                                            <div class="text-xs font-bold text-white">Premium Wedding</div>
+                                            <div class="text-[10px] sm:text-[11px] text-gold-300">Karizma Album & Video</div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to load user's image directly in browser -->
+                                    <div class="mt-3.5 sm:mt-4 pt-3 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs text-gray-300">
+                                        <span class="text-center sm:text-left"><i class="fas fa-folder-open text-gold-400 mr-1"></i> Save as <code class="text-gold-300 bg-black/50 px-1.5 py-0.5 rounded">assets/hero-poster.jpeg</code></span>
+                                        <label class="w-full sm:w-auto text-center cursor-pointer bg-gold-500 hover:bg-gold-400 text-obsidian font-bold px-3 py-1.5 sm:py-1 rounded-lg transition">
+                                            <i class="fas fa-upload mr-1"></i> Preview Your Poster Photo Now
+                                            <input type="file" accept="image/*" class="hidden" onchange="previewLocalImage(event, 'hero-featured-poster', 'poster-rich-fallback')">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Ribbon Banner -->
+                                <div class="bg-gradient-to-r from-amber-600 via-gold-300 to-amber-600 text-obsidian font-extrabold text-xs xs:text-sm sm:text-xl py-2 px-3 sm:px-4 rounded-xl shadow-lg tracking-wide uppercase">
+                                    <i class="fas fa-camera-retro mr-1"></i> Album & Video Delivery <i class="fas fa-film ml-1"></i>
+                                </div>
+                                <p class="text-[11px] sm:text-sm text-gold-200 mt-2 font-medium">आपके भरोसे और प्यार के लिए दिल से धन्यवाद!</p>
+
+                                <!-- Poster Bottom Contact Bar -->
+                                <div class="mt-4 sm:mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-left">
+                                    <div class="bg-rose-950/70 border border-rose-500/40 rounded-xl p-2.5 sm:p-3 flex items-center gap-3">
+                                        <i class="fas fa-phone-alt text-base sm:text-xl text-gold-400 bg-obsidian p-2 sm:p-2.5 rounded-full flex-shrink-0"></i>
+                                        <div>
+                                            <div class="text-xs sm:text-sm font-extrabold text-gold-300">9794411063</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-rose-950/70 border border-rose-500/40 rounded-xl p-2.5 sm:p-3 flex items-center gap-3">
+                                        <i class="fas fa-map-marker-alt text-base sm:text-xl text-gold-400 bg-obsidian p-2 sm:p-2.5 rounded-full flex-shrink-0"></i>
+                                        <div>
+                                            <div class="text-[10px] sm:text-xs text-rose-200">पता :</div>
+                                            <div class="text-xs sm:text-sm font-extrabold text-white">चांदपुर बाजार, सीतापुर</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Studio Highlights, Main Logo Emblem Card & Direct Booking (5 Columns) -->
+                <div class="lg:col-span-5 order-2 space-y-5 sm:space-y-6">
+                    
+                    <!-- Highlighted Main Logo Emblem Showcase Card -->
+                    <div class="glass-card rounded-2xl sm:rounded-3xl p-4 xs:p-5 sm:p-6 relative overflow-hidden border border-gold-500/30">
+                        <div class="flex flex-col xs:flex-row items-center xs:items-start text-center xs:text-left gap-3.5 sm:gap-4">
+                     <div class="w-full h-full rounded-xl bg-royal flex items-center justify-center overflow-hidden">
+        <img
+            src="work/WhatsApp%20Image%202026-10-17%20at%2019.07.41.jpeg"
+            alt="Akanksha Studio Logo"
+            class="w-full h-full object-contain rounded-xl"
+            onerror="this.style.display='none'; document.getElementById('hero-emblem-fallback').classList.remove('hidden')"
+        >                       <div id="hero-emblem-fallback" class="hidden w-full h-full rounded-xl bg-royal flex flex-col items-center justify-center p-2 text-center">
+                                    <i class="fas fa-camera-retro text-2xl text-gold-400 mb-1"></i>
+                                    <span class="text-[9px] font-bold text-gold-300 leading-tight">AKANKSHA STUDIO</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400 block">Official Brand</span>
+                                <h2 class="text-lg xs:text-xl sm:text-2xl font-serif font-bold text-white leading-snug">Akanksha Studio & Jan Sewa Kendra</h2>
+                                <p class="text-xs text-gray-300 mt-1">Proprietor: <strong class="text-gold-300">Jitu Babu</strong> | चांदपुर बाजार, सीतापुर</p>
+                             
+  
+
+                            </div>
+                        </div>
+
+                        <p class="text-xs sm:text-sm text-gray-300 mt-4 leading-relaxed text-center xs:text-left">
+                            शादी, प्री-वेडिंग, 4K ड्रोन शूट, सिनेमैटिक वीडियोग्राफी, करिज्मा एल्बम डिजाइनिंग और सभी प्रकार के ऑनलाइन फॉर्म (CSC जन सेवा केंद्र) की विश्वसनीय सेवाएं।
+                        </p>
+
+                        <!-- 6 Core Poster Badges (2 cols on very small screens, 3 cols on xs+) -->
+                        <div class="grid grid-cols-2 xs:grid-cols-3 gap-2 sm:gap-2.5 mt-4 sm:mt-5 pt-4 sm:pt-5 border-t border-white/10 text-center">
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-camera text-gold-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">Wedding Shoot</div>
+                            </div>
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-video text-gold-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">Cinematic Film</div>
+                            </div>
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-book-open text-gold-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">Album Design</div>
+                            </div>
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-helicopter text-gold-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">4K Drone</div>
+                            </div>
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-satellite-dish text-gold-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">Live Telecast</div>
+                            </div>
+                            <div class="bg-obsidian/60 p-2.5 rounded-xl border border-gold-500/20">
+                                <i class="fas fa-laptop-code text-sky-400 text-base sm:text-lg mb-1"></i>
+                                <div class="text-[10px] sm:text-[11px] font-semibold text-gray-200">CSC Jan Sewa</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+                        <a href="https://wa.me/919794411063?text=नमस्ते%20Akansha%20%26%20Akanksha%20Studio,%20मुझे%20शादी/इवेंट%20बुकिंग%20के%20बारे%20में%20जानकारी%20चाहिए।" target="_blank" class="bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-500 hover:to-emerald-400 text-white font-bold py-3.5 sm:py-4 px-5 rounded-2xl shadow-lg shadow-green-600/25 flex items-center justify-center gap-2.5 transition transform hover:-translate-y-0.5">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <div class="text-left">
+                                <div class="text-[10px] uppercase tracking-wider opacity-90">WhatsApp Booking</div>
+                                <div class="text-sm font-extrabold">9794411063</div>
+                            </div>
+                        </a>
+
+                        <a href="#work-portfolio" class="bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian font-bold py-3.5 sm:py-4 px-5 rounded-2xl shadow-lg shadow-gold-500/25 flex items-center justify-center gap-2.5 transition transform hover:-translate-y-0.5">
+                            <i class="fas fa-images text-xl"></i>
+                            <div class="text-left">
+                                <div class="text-[10px] uppercase tracking-wider opacity-80">Check Sample Work</div>
+                                <div class="text-sm font-extrabold">View ROHIT.pdf Album</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- DYNAMIC WORK REFERENCE / PORTFOLIO SECTION (Fetches from `work/` folder) -->
+    <!-- ===================================================================== -->
+    <section id="work-portfolio" class="py-14 sm:py-20 bg-[#070b18] border-y border-gold-500/20 relative">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">
+                        <span class="w-6 sm:w-8 h-[2px] bg-gold-400"></span> Our Recent Work & Deliveries
+                    </div>
+                    <h2 class="text-2xl xs:text-3xl sm:text-5xl font-serif font-bold">
+                        Wedding Albums & <span class="gold-text">Work Portfolio</span>
+                    </h2>
+                    <p class="text-gray-400 text-xs sm:text-base mt-2 max-w-2xl">
+                        यहाँ हमारे द्वारा डिज़ाइन किए गए वेडिंग एल्बम (जैसे <code class="text-gold-300">work/ROHIT.pdf</code>) और शूट के सैंपल दिए गए हैं। नए काम देखने के लिए किसी भी कार्ड पर क्लिक करें।
+                    </p>
+                </div>
+
+                <!-- Category Filter Buttons (Horizontally Scrollable on Mobile) -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1" id="portfolio-filters">
+                    <button onclick="filterPortfolio('all', this)" class="filter-btn active whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition">All Work</button>
+                    <button onclick="filterPortfolio('album', this)" class="filter-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold bg-royal text-gray-300 border border-gray-700 hover:border-gold-400 transition">PDF Albums</button>
+                    <button onclick="filterPortfolio('spread', this)" class="filter-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold bg-royal text-gray-300 border border-gray-700 hover:border-gold-400 transition">Album Spreads</button>
+                </div>
+            </div>
+
+            <!-- Featured Interactive Album Banner for ROHIT.pdf -->
+            <div class="mb-8 sm:mb-10 glass-card rounded-2xl sm:rounded-3xl p-4 xs:p-5 sm:p-8 border-2 border-gold-500/40 bg-gradient-to-r from-royal/90 via-[#1a0b25]/90 to-royal/90 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-center">
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="inline-flex items-center gap-1.5 sm:gap-2 bg-crimson/20 border border-crimson/50 text-rose-300 text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full">
+                            <i class="fas fa-file-pdf text-rose-400"></i> Featured Work Reference #1 (21 Pages Album)
+                        </div>
+                        <h3 class="text-xl xs:text-2xl sm:text-3xl font-serif font-bold text-white leading-snug">
+                            Rohit Wedding Ceremony — <span class="gold-text">Full Karizma Album (ROHIT.pdf)</span>
+                        </h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                            "A Good Marriage — Sweet Memories" वेडिंग एल्बम डिज़ाइन। इसमें वरमाला, हल्दी, आशीर्वाद और कपल पोर्ट्रेट्स की 21 प्रीमियम शीट्स शामिल हैं।
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-3 pt-2">
+                            <button onclick="openAlbumViewerModal()" class="w-full sm:w-auto justify-center bg-gradient-to-r from-gold-500 to-gold-600 text-obsidian font-extrabold px-5 sm:px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition flex items-center gap-2 text-xs sm:text-sm">
+                                <i class="fas fa-book-reader"></i> Interactive Album Preview (Flip Pages)
+                            </button>
+                            <a href="work/ROHIT.pdf" target="_blank" class="w-full sm:w-auto justify-center bg-white/10 hover:bg-white/20 text-white border border-gold-400/40 font-semibold px-5 py-3 rounded-xl transition flex items-center gap-2 text-xs sm:text-sm">
+                                <i class="fas fa-external-link-alt text-gold-400"></i> Open work/ROHIT.pdf
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mini Interactive Spread Preview Strip -->
+                    <div class="lg:col-span-5">
+                        <div onclick="openAlbumViewerModal()" class="cursor-pointer group relative rounded-2xl overflow-hidden border-2 border-gold-400/50 bg-gradient-to-br from-rose-950 via-red-900 to-amber-950 p-3 sm:p-4 shadow-xl">
+                            <div class="flex items-center justify-between text-[11px] sm:text-xs text-gold-300 mb-2 font-semibold">
+                                <span><i class="fas fa-layer-group mr-1"></i> ROHIT.pdf — Sheet Preview</span>
+                                <span class="bg-black/50 px-2 py-0.5 rounded text-[10px]">21 Spreads</span>
+                            </div>
+                            <!-- Stylized Spread Representation matching ROHIT.pdf Page 4 "Wedding Ceremony" -->
+                            <div class="grid grid-cols-12 gap-2 h-32 xs:h-36 sm:h-40 rounded-xl overflow-hidden bg-black/40 p-2 border border-white/10">
+                                <div class="col-span-5 bg-gradient-to-b from-red-800/80 to-rose-950 rounded-lg p-2 flex flex-col justify-between border border-gold-400/30">
+                                    <span class="text-[8px] sm:text-[9px] uppercase tracking-widest text-gold-300 font-serif truncate">Bridal Portrait</span>
+                                    <div class="text-center my-auto">
+                                        <i class="fas fa-female text-2xl sm:text-3xl text-gold-400/90"></i>
+                                    </div>
+                                    <span class="text-[7px] sm:text-[8px] text-gray-300 truncate">Full Moon Backdrop</span>
+                                </div>
+                                <div class="col-span-7 bg-gradient-to-r from-stone-900 to-rose-950/90 rounded-lg p-2 sm:p-2.5 flex flex-col justify-between border border-gold-400/30">
+                                    <div>
+                                        <div class="text-[11px] sm:text-xs font-serif tracking-wider text-white font-bold truncate">wedding <span class="text-[7px] sm:text-[8px] text-gold-300 font-normal">CEREMONY</span></div>
+                                        <div class="text-[8px] sm:text-[9px] text-rose-200 mt-0.5 truncate">Sweet Memories Forever</div>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-2.5 sm:gap-3 my-auto">
+                                        <i class="fas fa-user-tie text-xl sm:text-2xl text-gold-300"></i>
+                                        <i class="fas fa-heart text-xs text-rose-500 animate-pulse"></i>
+                                        <i class="fas fa-female text-xl sm:text-2xl text-rose-400"></i>
+                                    </div>
+                                    <div class="text-[8px] sm:text-[9px] text-right text-gold-400 font-semibold">Tap to Flip Pages →</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Portfolio Grid (Auto-populated from `portfolioWorkFiles` JSON array in JS) -->
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                <!-- Cards are rendered automatically via JavaScript from the JSON list -->
+            </div>
+
+            <!-- Developer Helper Box: Shows Exact Line Number & How to Add More Files in `work/` Folder -->
+            <!-- <div class="mt-12 rounded-2xl bg-[#0a1022] border border-sky-500/30 p-5 sm:p-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-gray-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/40 flex items-center justify-center text-sky-400 font-bold">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
+                                Work Folder & JSON Data Guide 
+                                <span id="exact-line-badge" class="bg-gold-500 text-obsidian text-xs font-extrabold px-2.5 py-0.5 rounded-full">Line #485</span>
+                            </h4>
+                            <p class="text-xs text-gray-400">नया PDF या Photo जोड़ने के लिए <code class="text-sky-300">work/</code> फ़ोल्डर में फ़ाइल रखें और नीचे दी गई JSON लिस्ट में कॉमा <code class="text-gold-400">,</code> लगाकर नाम जोड़ें।</p>
+                        </div>
+                    </div>
+                    <button onclick="copyJsonTemplate()" class="bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 self-start sm:self-auto">
+                        <i class="fas fa-copy"></i> Copy New Item Code
+                    </button>
+                </div>
+
+                <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-black/60 p-3.5 rounded-xl border border-gray-800 font-mono text-gray-300 overflow-x-auto">
+                        <div class="text-gold-400 font-bold mb-1">// 📁 Folder Structure (अपने कंप्यूटर पर ऐसे रखें):</div>
+                        <div>📦 project-folder/</div>
+                        <div class="pl-4">├── 📄 <span class="text-white font-bold">index.html</span></div>
+                        <div class="pl-4">├── 📁 <span class="text-sky-400 font-bold">assets/</span></div>
+                        <div class="pl-8">├── 🖼️ <span class="text-green-400">logo.jpeg</span> (आपका गोल आकांक्षा लोगो)</div>
+                        <div class="pl-8">└── 🖼️ <span class="text-green-400">hero-poster.jpeg</span> (बड़ा डिलीवरी पोस्टर)</div>
+                        <div class="pl-4">└── 📁 <span class="text-amber-400 font-bold">work/</span> (यहाँ अपने सारे काम डालें)</div>
+                        <div class="pl-8">├── 📕 <span class="text-rose-400 font-bold">ROHIT.pdf</span> (पहला वेडिंग एल्बम)</div>
+                        <div class="pl-8">└── 🖼️ <span class="text-gray-400">next-album.pdf या photo2.jpg</span></div>
+                    </div>
+
+                    <div class="bg-black/60 p-3.5 rounded-xl border border-gray-800 font-mono text-gray-300 overflow-x-auto">
+                        <div class="text-sky-400 font-bold mb-1">// 📝 Code में <span id="exact-line-inline">Line 485</span> पर बस कॉमा (,) लगाकर फ़ाइल का नाम लिखें:</div>
+                        <pre class="text-[11px] leading-relaxed text-emerald-300">const portfolioWorkData = [
+  "ROHIT.pdf",
+  "AMIT_WEDDING.pdf",  // <-- बस कॉमा लगाकर नया नाम लिखें!
+  "PRE_WEDDING_1.jpg"
+];</pre>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STUDIO & PHOTOGRAPHY SERVICES SECTION                                 -->
+    <!-- ===================================================================== -->
+    <section id="services" class="py-14 sm:py-20 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Our Expertise — हमारी सेवाएं</span>
+                <h2 class="text-2xl xs:text-3xl sm:text-5xl font-serif font-bold mt-2">
+                    Premium Studio <span class="gold-text">Services</span>
+                </h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-gold-500 to-crimson mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Wedding & Pre-Wedding Shoot</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">पारंपरिक और कैंडिड वेडिंग फोटोग्राफी, रोमांटिक प्री-वेडिंग शूट और हर रस्म की बेहतरीन कवरेज।</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Cinematic Videography & Mixing</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">4K सिनेमैटिक वेडिंग फिल्म्स, टीज़र, रील्स और प्रोफेशनल वीडियो मिक्सिंग व कलर ग्रेडिंग।</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Luxury Album Designing</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">करिज्मा, कैनवेरा और नॉन-टेयरेबल वाटरप्रूफ वेडिंग एल्बम डिजाइनिंग व फास्ट डिलीवरी।</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-helicopter"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">4K Drone Aerial Shoot</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">बारात, वरमाला और भव्य इवेंट्स के लिए अल्ट्रा-एचडी 4K ड्रोन कैमरा कवरेज।</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">LED Wall & Live Telecast</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">शादी और बड़े कार्यक्रमों में सीधा प्रसारण (Live Telecast) और बड़ी स्क्रीन की सुविधा।</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 sm:p-7 relative overflow-hidden group">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-amber-600/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl sm:text-2xl mb-4 sm:mb-5 group-hover:bg-gold-500 group-hover:text-obsidian transition">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Photo Framing & Lamination</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">तुरंत पासपोर्ट साइज फोटो, बड़े फोटो फ्रेम, कलर प्रिंटिंग और लेमिनेशन की सुविधा।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- JAN SEWA KENDRA (CSC) DIGITAL SERVICES SECTION                        -->
+    <!-- ===================================================================== -->
+    <section id="csc-services" class="py-12 sm:py-16 bg-gradient-to-b from-royal/50 to-obsidian border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-2xl sm:rounded-3xl p-5 xs:p-6 sm:p-10 border border-sky-500/30 relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+                    <div class="lg:col-span-5 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-sky-500/20 border border-sky-400/40 text-sky-300 text-xs font-bold px-3.5 py-1 rounded-full mb-3">
+                            <i class="fas fa-globe"></i> Authorized Digital Center
+                        </div>
+                        <h2 class="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-white">
+                            Akanksha <span class="text-sky-400">Jan Sewa Kendra</span> & CSC Center
+                        </h2>
+                        <p class="text-gray-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                            फोटोग्राफी के साथ-साथ हमारे यहाँ सभी सरकारी व गैर-सरकारी ऑनलाइन फॉर्म, प्रमाण पत्र और बैंकिंग सेवाएं भी उपलब्ध हैं।
+                        </p>
+                        <a href="tel:9794411063" class="mt-5 sm:mt-6 w-full sm:w-auto justify-center inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-obsidian font-bold px-6 py-3 rounded-xl transition text-xs sm:text-sm">
+                            <i class="fas fa-phone-alt"></i> जन सेवा केंद्र हेल्पलाइन: 9794411063
+                        </a>
+                    </div>
+
+                    <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3.5">
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-id-card text-sky-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">आय, जाति, निवास</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">प्रमाण पत्र ऑनलाइन आवेदन</p>
+                        </div>
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-address-card text-gold-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">PAN & Aadhar Print</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">पैन कार्ड व पीवीसी कार्ड</p>
+                        </div>
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-laptop-file text-emerald-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">Online Job Forms</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">सभी सरकारी नौकरी व एडमिट कार्ड</p>
+                        </div>
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-hand-holding-medical text-rose-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">आयुष्मान व राशन कार्ड</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">स्वास्थ्य कार्ड एवं केवाईसी</p>
+                        </div>
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-money-bill-transfer text-amber-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">AEPS Money Transfer</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">आधार से पैसा निकासी व ट्रांसफर</p>
+                        </div>
+                        <div class="bg-obsidian/80 p-3.5 sm:p-4 rounded-2xl border border-gray-800 hover:border-sky-400/50 transition">
+                            <i class="fas fa-file-invoice text-purple-400 text-lg sm:text-xl mb-1.5 sm:mb-2"></i>
+                            <h4 class="font-bold text-xs sm:text-sm text-white">बिजली बिल व रिचार्ज</h4>
+                            <p class="text-[10px] sm:text-[11px] text-gray-400 mt-0.5">खतौनी नकल व पेंशन केवाईसी</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- CONTACT & FOOTER SECTION                                              -->
+    <!-- ===================================================================== -->
+    <footer id="contact" class="bg-[#03050a] border-t border-gold-500/30 pt-12 sm:pt-16 pb-10 relative">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-gray-800">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-gold-500 to-amber-300 p-0.5 flex-shrink-0">
+                            <div class="w-full h-full bg-royal rounded-full flex items-center justify-center text-gold-400 font-serif font-bold">A</div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-serif font-bold gold-text">Akanksha Studio</h3>
+                            <p class="text-xs text-gray-400">Studio & Jan Sewa Kendra — Sitapur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        आपकी यादें हमारी जिम्मेदारी... हर पल खूबसूरत। शादी, पार्टी, मुंडन, बर्थडे और सभी शुभ अवसरों पर फोटोग्राफी एवं वीडियोग्राफी बुकिंग के लिए संपर्क करें।
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-2">
+                        <a href="https://instagram.com/its_akankshastudio" target="_blank" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white text-xs font-bold flex items-center gap-2 hover:opacity-95 transition">
+                            <i class="fab fa-instagram text-base"></i> @its_akankshastudio
+                        </a>
+                        <a href="https://wa.me/919794411063" target="_blank" class="px-4 py-2.5 rounded-xl bg-green-600 hover:bg-green-500 text-white text-xs font-bold flex items-center gap-2 transition">
+                            <i class="fab fa-whatsapp text-base"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Direct Phone Numbers -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold-400">Call / WhatsApp Numbers</h4>
+                    <a href="tel:9794411063" class="flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-royal/60 border border-gray-800 hover:border-gold-500/50 transition">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <div class="text-[11px] sm:text-xs text-gray-400">Primary Booking Number</div>
+                            <div class="text-base sm:text-lg font-extrabold text-white">+91 9794411063</div>
+                        </div>
+                    </a>
+                    <a href="tel:9794411063" class="flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-royal/60 border border-gray-800 hover:border-gold-500/50 transition">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div>
+                            <div class="text-[11px] sm:text-xs text-gray-400">Studio & CSC Support</div>
+                            <div class="text-base sm:text-lg font-extrabold text-white">+91 9794411063</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Address Card -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold-400">Studio Location (पता)</h4>
+                    <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-rose-950/50 to-royal/70 border border-rose-500/30 space-y-2">
+                        <div class="w-10 h-10 rounded-xl bg-crimson/20 text-rose-400 flex items-center justify-center text-lg">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text-base font-extrabold text-white">चांदपुर बाजार, सीतापुर</div>
+                        <div class="text-xs text-gray-300">Chandpur Bazar, Sitapur (Uttar Pradesh)</div>
+                        <div class="text-xs text-gold-300 pt-1 font-medium">Prop: Jitu Babu</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-3 text-center sm:text-left">
+                <p>&copy; <span id="year"></span> Akanksha Studio & Jan Sewa Kendra. All rights reserved.</p>
+                <p class="text-gray-400">आपके भरोसे और प्यार के लिए दिल से धन्यवाद! ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- MOBILE STICKY BOTTOM ACTION BAR (Appears only on Mobile Screens)      -->
+    <!-- ===================================================================== -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-obsidian/95 backdrop-blur-xl border-t border-gold-500/30 px-3 py-2 flex items-center justify-between gap-2 shadow-2xl">
+        <a href="tel:9794411063" class="flex-1 bg-royal border border-gold-500/40 text-gold-300 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5">
+            <i class="fas fa-phone-volume"></i> Call Studio
+        </a>
+        <a href="https://wa.me/919794411063?text=नमस्ते%20Akansha%20%26%20Akanksha%20Studio,%20मुझे%20जानकारी%20चाहिए।" target="_blank" class="flex-1 bg-gradient-to-r from-green-600 to-emerald-500 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-lg">
+            <i class="fab fa-whatsapp text-sm"></i> WhatsApp
+        </a>
+        <button onclick="openAlbumViewerModal()" class="bg-gold-500 text-obsidian font-extrabold px-3.5 py-2.5 rounded-xl text-xs flex items-center justify-center gap-1">
+            <i class="fas fa-book-open"></i> Album
+        </button>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- INTERACTIVE MODAL 1: WEDDING ALBUM VIEWER (ROHIT.pdf Spread Flipper)   -->
+    <!-- ===================================================================== -->
+    <div id="album-viewer-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-2.5 sm:p-4 overflow-y-auto">
+        <div class="bg-[#0a1022] border-2 border-gold-500/50 rounded-2xl sm:rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl my-auto">
+            <div class="flex flex-wrap items-center justify-between gap-2 px-4 sm:px-6 py-3.5 sm:py-4 bg-royal border-b border-gray-800">
+                <div class="flex items-center gap-2 min-w-0">
+                    <i class="fas fa-book-open text-gold-400 flex-shrink-0"></i>
+                    <span id="modal-album-title" class="font-serif font-bold text-white text-sm sm:text-lg truncate">work/ROHIT.pdf — Wedding Album Preview</span>
+                </div>
+                <div class="flex items-center gap-2 sm:gap-3 ml-auto">
+                    <a id="modal-pdf-direct-link" href="work/ROHIT.pdf" target="_blank" class="bg-gold-500 hover:bg-gold-400 text-obsidian text-[11px] sm:text-xs font-extrabold px-3 sm:px-3.5 py-1.5 rounded-lg transition whitespace-nowrap">
+                        <i class="fas fa-file-pdf mr-1"></i> Open Full PDF
+                    </a>
+                    <button onclick="closeAlbumViewerModal()" class="w-8 h-8 rounded-lg bg-gray-800 text-gray-300 hover:text-white flex items-center justify-center">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Spread Display -->
+            <div class="p-4 sm:p-8">
+                <div id="spread-stage" class="rounded-xl sm:rounded-2xl border border-gold-500/40 bg-gradient-to-br from-[#2a0815] via-[#13091f] to-[#0a122c] p-4 sm:p-10 min-h-[250px] sm:min-h-[300px] flex flex-col justify-between relative overflow-hidden">
+                    <!-- Dynamic Spread Content injected by JS -->
+                </div>
+
+                <!-- Page Controls -->
+                <div class="flex items-center justify-between gap-2 mt-4 sm:mt-6">
+                    <button onclick="changeSpread(-1)" class="px-3 sm:px-4 py-2 rounded-xl bg-royal border border-gray-700 hover:border-gold-400 text-xs font-bold text-gray-200 flex items-center gap-1.5">
+                        <i class="fas fa-chevron-left"></i> <span class="hidden xs:inline">Previous</span> Sheet
+                    </button>
+                    <span id="spread-counter" class="text-xs font-bold text-gold-300">Sheet 1 of 5</span>
+                    <button onclick="changeSpread(1)" class="px-3 sm:px-4 py-2 rounded-xl bg-gold-500 text-obsidian text-xs font-extrabold flex items-center gap-1.5">
+                        Next <span class="hidden xs:inline">Sheet</span> <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- INTERACTIVE MODAL 2: SETUP & LIVE IMAGE TESTER                        -->
+    <!-- ===================================================================== -->
+    <div id="asset-tester-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="bg-[#0b132b] border border-gold-500/40 rounded-2xl sm:rounded-3xl max-w-xl w-full p-5 sm:p-8 shadow-2xl space-y-4 sm:space-y-5 my-auto">
+            <div class="flex justify-between items-center border-b border-gray-800 pb-3">
+                <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                    <i class="fas fa-folder-plus text-gold-400"></i> Easy Setup & Live Photo Tester
+                </h3>
+                <button onclick="closeAssetTesterModal()" class="text-gray-400 hover:text-white"><i class="fas fa-times text-lg"></i></button>
+            </div>
+
+            <div class="space-y-3.5 sm:space-y-4 text-xs sm:text-sm text-gray-300">
+                <p>आप अपनी फ़ाइलों को अभी तुरंत इसी पेज पर अपलोड करके देख सकते हैं या अपने कंप्यूटर पर नीचे दिए गए नाम से सेव कर सकते हैं:</p>
+
+                <div class="p-3 sm:p-3.5 rounded-xl bg-obsidian/80 border border-gray-800 flex flex-col xs:flex-row xs:items-center justify-between gap-2.5">
+                    <div>
+                        <div class="font-bold text-gold-300">1. Main Circle Logo (आकांक्षा लोगो)</div>
+                        <div class="text-xs text-gray-400">File path: <code>assets/logo.jpeg</code></div>
+                    </div>
+                    <label class="cursor-pointer bg-gold-500 text-obsidian font-bold px-3 py-1.5 rounded-lg text-xs text-center flex-shrink-0">
+                        Choose Logo <input type="file" accept="image/*" class="hidden" onchange="previewLogoBoth(event)">
+                    </label>
+                </div>
+
+                <div class="p-3 sm:p-3.5 rounded-xl bg-obsidian/80 border border-gray-800 flex flex-col xs:flex-row xs:items-center justify-between gap-2.5">
+                    <div>
+                        <div class="font-bold text-rose-300">2. Top Big Poster (खुशियों की डिलीवरी फोटो)</div>
+                        <div class="text-xs text-gray-400">File path: <code>assets/hero-poster.jpeg</code></div>
+                    </div>
+                    <label class="cursor-pointer bg-rose-600 text-white font-bold px-3 py-1.5 rounded-lg text-xs text-center flex-shrink-0">
+                        Choose Poster <input type="file" accept="image/*" class="hidden" onchange="previewLocalImage(event, 'hero-featured-poster', 'poster-rich-fallback')">
+                    </label>
+                </div>
+
+                <div class="p-3 sm:p-3.5 rounded-xl bg-sky-950/40 border border-sky-500/30">
+                    <div class="font-bold text-sky-300">3. Where to add new Work Reference in Code?</div>
+                    <p class="text-xs text-gray-300 mt-1">
+                        इस कोड की <strong id="modal-line-num" class="text-gold-400">Line #485</strong> पर <code>portfolioWorkData</code> लिस्ट दी गई है। आप <code>work/</code> फ़ोल्डर में जितनी चाहें PDF या JPG फ़ाइलें डालें और बस कॉमा (<code>,</code>) लगाकर फ़ाइल का नाम लिखते जाएं!
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <button onclick="closeAssetTesterModal()" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl">Done</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- MAIN JAVASCRIPT & WORK PORTFOLIO JSON DATA                            -->
+    <!-- ===================================================================== -->
+    <script id="main-studio-script">
+        // ============================================================================
+        // ★ WORK PORTFOLIO JSON DATA (यहाँ कॉमा `,` लगाकर अपनी नई फ़ाइलों के नाम जोड़ें) ★
+        // Folder Path: सभी फ़ाइलें `work/` फ़ोल्डर के अंदर रखें (उदाहरण: work/ROHIT.pdf)
+        // ============================================================================
+        const WORK_FOLDER_PATH = "work/";
+
+        const portfolioWorkData = [
+            // 1. आपका पहला वेडिंग एल्बम रेफ़रेंस (ROHIT.pdf)
+            {
+                fileName: "ROHIT.pdf",
+                title: "Rohit Wedding Full Album (21 Pages)",
+                category: "album",
+                badge: "Featured PDF Album",
+                description: "A Good Marriage & Sweet Memories — संपूर्ण वेडिंग करिज्मा एल्बम डिज़ाइन (वरमाला, रस्में एवं कपल शूट)।",
+                accent: "from-rose-900 via-red-950 to-obsidian"
+            },
+            // 2. ROHIT.pdf के अंदर की कुछ प्रमुख शीट्स का प्रीव्यू
+            {
+                fileName: "1407- Shiva Prajapati (CSC).pdf",
+                title: "Wedding Ceremony — Full Moon Couple Spread",
+                category: "spread",
+                badge: "ROHIT.pdf • Page 04",
+                description: "चांदनी रात के बैकड्रॉप और ब्लैक एंड व्हाइट ब्राइडल पोर्ट्रेट के साथ रॉयल वेडिंग शीट डिज़ाइन।",
+                accent: "from-indigo-950 via-slate-900 to-obsidian"
+            },
+            {
+                fileName: "1385- Shiva Prajapati (CSC).pdf",
+                title: "Sweet Memories — Varmala & Blessings Spread",
+                category: "spread",
+                badge: "ROHIT.pdf • Page 14",
+                description: "वरमाला और स्टेज सेरेमनी के खूबसूरत पलों का पैनोरमिक कोलाज लेआउट।",
+                accent: "from-pink-950 via-rose-900 to-obsidian"
+            }
+            // 👇 नया काम जोड़ने के लिए ऊपर वाली लाइन के बाद कॉमा (,) लगाएं और केवल फ़ाइल का नाम भी लिख सकते हैं:
+            // , "NEXT_ALBUM.pdf"
+            // , "WEDDING_PHOTO_1.jpg"
+        ];
+        // ============================================================================
+        // ▲ ऊपर दी गई लिस्ट में आप सिर्फ `"NEW_FILE.pdf"` या पूरा ऑब्जेक्ट दोनों जोड़ सकते हैं ▲
+        // ============================================================================
+
+
+        // Render Portfolio Cards dynamically from `portfolioWorkData`
+        function renderPortfolio(filterType = 'all') {
+            const grid = document.getElementById('portfolio-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            portfolioWorkData.forEach((item, index) => {
+                // Support both simple string filenames (e.g. "AMAN.pdf") and full objects!
+                const isStringEntry = typeof item === 'string';
+                const fileName = isStringEntry ? item : item.fileName;
+                const isPdf = fileName.toLowerCase().endsWith('.pdf');
+                const category = isStringEntry ? (isPdf ? 'album' : 'spread') : item.category;
+
+                if (filterType !== 'all' && category !== filterType) return;
+
+                const title = isStringEntry 
+                    ? fileName.replace(/\.[^/.]+$/, "").replace(/[_-]/g, " ") + (isPdf ? " (Wedding Album)" : "")
+                    : item.title;
+                const badge = isStringEntry ? (isPdf ? "PDF Album" : "Photo Shoot") : item.badge;
+                const desc = isStringEntry 
+                    ? `Akanksha Studio द्वारा तैयार किया गया वर्क रेफ़रेंस (${WORK_FOLDER_PATH}${fileName})।`
+                    : item.description;
+                const accent = isStringEntry ? "from-royal via-slate-900 to-obsidian" : item.accent;
+                const fullFilePath = WORK_FOLDER_PATH + fileName;
+
+                // Automatically pick the right PDF page for the top preview (e.g. Page 04 -> #page=4, Page 14 -> #page=14, default -> #page=1)
+                const pageMatch = !isStringEntry && item.badge ? item.badge.match(/Page\s*(\d+)/i) : null;
+                const pdfPageNumber = pageMatch ? parseInt(pageMatch[1], 10) : 1;
+
+                const card = document.createElement('div');
+                card.className = "glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between border border-gold-500/25";
+                card.innerHTML = `
+                    <div>
+                        <div class="h-44 sm:h-48 bg-gradient-to-br ${accent} p-4 sm:p-5 flex flex-col justify-between relative overflow-hidden border-b border-white/10 group">
+                            ${isPdf 
+                                ? `<div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+                                       <iframe src="${fullFilePath}#page=${pdfPageNumber}&toolbar=0&navpanes=0&scrollbar=0&view=FitH" 
+                                               class="w-[108%] h-[145%] -ml-[4%] -mt-[4%] border-0 opacity-75 group-hover:opacity-95 transition-opacity duration-300 pointer-events-none" 
+                                               tabindex="-1" 
+                                               scrolling="no"
+                                               title="${title} Preview"></iframe>
+                                       <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/25 to-obsidian/65"></div>
+                                   </div>`
+                                : `<img src="${fullFilePath}" alt="${title}" class="absolute inset-0 w-full h-full object-cover opacity-80" onerror="this.style.display='none'">`
+                            }
+                            <div class="relative z-10 flex justify-between items-center gap-2">
+                                <span class="bg-black/60 backdrop-blur-md text-gold-300 border border-gold-500/30 text-[10px] sm:text-[11px] font-bold px-2.5 sm:px-3 py-1 rounded-full truncate">
+                                    ${badge}
+                                </span>
+                                <span class="text-[11px] sm:text-xs font-mono text-gray-300 bg-black/50 px-2 py-0.5 rounded flex-shrink-0">
+                                    <i class="fas ${isPdf ? 'fa-file-pdf text-rose-400' : 'fa-image text-sky-400'} mr-1"></i>${fileName}
+                                </span>
+                            </div>
+
+                            <div class="relative z-10 my-auto text-center">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-black/55 backdrop-blur-md border border-gold-400/50 flex items-center justify-center mx-auto text-gold-400 text-lg sm:text-xl shadow-lg">
+                                    <i class="fas ${isPdf ? 'fa-book-open' : 'fa-camera-retro'}"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative z-10 text-[10px] sm:text-[11px] text-gold-200/90 font-medium flex items-center justify-between">
+                                <span>Akanksha Studio</span>
+                                <span>#${index + 1}</span>
+                            </div>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-2">${title}</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">${desc}</p>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 flex items-center gap-2.5">
+                        <button onclick="openAlbumViewerModal('${fileName}')" class="flex-1 bg-gold-500/15 hover:bg-gold-500 text-gold-300 hover:text-obsidian border border-gold-500/40 font-bold py-2.5 px-4 rounded-xl text-xs transition flex items-center justify-center gap-1.5">
+                            <i class="fas fa-eye"></i> Preview Spreads
+                        </button>
+                        <a href="${fullFilePath}" target="_blank" class="bg-royal hover:bg-gray-800 text-gray-200 border border-gray-700 py-2.5 px-3.5 rounded-xl text-xs font-semibold transition" title="Open File from work/ folder">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterPortfolio(type, clickedBtn) {
+            if (clickedBtn) {
+                document.querySelectorAll('#portfolio-filters .filter-btn').forEach(btn => {
+                    btn.className = "filter-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold bg-royal text-gray-300 border border-gray-700 hover:border-gold-400 transition";
+                });
+                clickedBtn.className = "filter-btn active whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition";
+            }
+            renderPortfolio(type);
+        }
+
+        // Interactive Album Spread Flipper Data (Mirrors ROHIT.pdf pages)
+        const rohitAlbumSpreads = [
+            {
+                sheet: "Page 02 & 03 — Opening Tribute",
+                heading: "A GOOD Marriage",
+                quote: "“I NEVER SEEN SUCH A SWEET LOVELY WEDS LIKE YOU FROM THE DEEPEST PART OF MY SOUL... BE FOREVER SHOWERED WITH BLESSINGS & LOVE.”",
+                highlights: "Royal Maroon & Gold Bridal Entry + Groom Sword Portrait"
+            },
+            {
+                sheet: "Page 04 — Signature Spread",
+                heading: "wedding CEREMONY",
+                quote: "Full Moon Architectural Night Backdrop paired with Monochrome Bridal Fine-Art Portrait & Couple Garland Pose.",
+                highlights: "Cinematic Color Grading & Multi-Layer Blending"
+            },
+            {
+                sheet: "Page 06 & 08 — Baraat & Tilak Rituals",
+                heading: "Baraat Welcome & Tilak Ceremony",
+                quote: "Decorated Wedding Car (UP32 BE 1044), Groom in Traditional Sehra, and Family Blessings.",
+                highlights: "Candid Ritual Coverage & Vibrant Traditional Tones"
+            },
+            {
+                sheet: "Page 13 & 14 — Varmala & Sweet Memories",
+                heading: "Sweet Memories — Jaimala Stage",
+                quote: "Auspicious Varmala Exchange on Stage and Family Group Portraits in Pink & Gold Theme.",
+                highlights: "High-Resolution Wide Panorama Sheet Design"
+            },
+            {
+                sheet: "Page 20 & 21 — Sindoor Daan & Vows",
+                heading: "Sacred Wedding Vows & Sindoor Ceremony",
+                quote: "Emotional and timeless moments of Sindoor Daan and Mandap rituals captured with precision.",
+                highlights: "Designed & Delivered by Akanksha Studio, Sitapur"
+            }
+        ];
+        let currentSpreadIndex = 0;
+
+       function renderCurrentSpread() {
+            const stage = document.getElementById('spread-stage');
+            const counter = document.getElementById('spread-counter');
+            const data = rohitAlbumSpreads[currentSpreadIndex];
+            const currentPdfFile = currentLoadedFileName;
+            if (!currentPdfFile) {
+                if (stage) stage.innerHTML = '<p class="text-gray-400 text-sm text-center py-8">No PDF file is selected.</p>';
+                return;
+            }
+
+            if (counter) counter.textContent = `Sheet ${currentSpreadIndex + 1} of ${rohitAlbumSpreads.length}`;
+            if (stage) {
+                stage.innerHTML = `
+                    <div class="flex flex-wrap justify-between items-center gap-2 border-b border-gold-500/20 pb-2.5 sm:pb-3 mb-3 sm:mb-4">
+                        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400">${data.sheet}</span>
+                        <div class="flex items-center gap-2">
+                            <button onclick="toggleModalFullscreen()" class="bg-gold-500/20 hover:bg-gold-500 text-gold-300 hover:text-obsidian px-2.5 py-1 rounded-lg text-[11px] font-bold transition flex items-center gap-1 border border-gold-500/40">
+                                <i class="fas fa-expand"></i> Fullscreen
+                            </button>
+                            <span class="text-[10px] sm:text-xs bg-black/50 text-rose-300 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border border-rose-500/30">Akanksha Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- Yahan Iframe add kiya hai jisse PDF yahin scroll karke dekh sakte hain -->
+                    <div id="pdf-view-box" class="w-full h-[420px] sm:h-[500px] rounded-xl overflow-hidden border border-gold-500/30 bg-black/50 relative my-2">
+                        <iframe src="${WORK_FOLDER_PATH}${currentPdfFile}#view=FitH" 
+                                class="w-full h-full border-0" 
+                                title="PDF Viewer"></iframe>
+                    </div>
+
+                    <div class="my-auto py-2 text-center max-w-2xl mx-auto space-y-1">
+                        <h4 class="text-lg sm:text-2xl font-serif font-bold gold-text">${data.heading}</h4>
+                        <p class="text-xs sm:text-sm text-gray-200 italic leading-relaxed">${data.quote}</p>
+                    </div>
+                    <div class="text-[10px] sm:text-[11px] text-gray-400 flex flex-wrap justify-between items-center gap-2 pt-2 border-t border-white/10">
+                        <span>Source File: <code class="text-gold-300">work/${currentPdfFile}</code></span>
+                        <span>बाँशुरा, सीतापुर | 9794411063</span>
+                    </div>
+                `;
+            }
+        }
+        function toggleModalFullscreen() {
+            const modalBox = document.getElementById('album-viewer-modal').querySelector('.bg-\\[\\#0a1022\\]');
+            if (!document.fullscreenElement) {
+                if (modalBox.requestFullscreen) {
+                    modalBox.requestFullscreen();
+                } else if (modalBox.webkitRequestFullscreen) {
+                    modalBox.webkitRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+        function changeSpread(direction) {
+            currentSpreadIndex = (currentSpreadIndex + direction + rohitAlbumSpreads.length) % rohitAlbumSpreads.length;
+            renderCurrentSpread();
+        }
+// Initialize with the first PDF found in portfolioWorkData (supports strings and objects).
+        // The currently opened file is updated every time a portfolio card is opened.
+        let currentLoadedFileName =
+            portfolioWorkData
+                .map(item => typeof item === 'string' ? item : item?.fileName)
+                .find(name => typeof name === 'string' && name.trim() && name.toLowerCase().endsWith('.pdf')) || '';
+
+        function openAlbumViewerModal(fileName = currentLoadedFileName) {
+            const selectedFileName = typeof fileName === 'string' ? fileName.trim() : '';
+
+            if (!selectedFileName) {
+                console.error('Cannot open album viewer: no valid file name was provided.');
+                return;
+            }
+
+            // Keep the selected file as the single source of truth for the viewer.
+            currentLoadedFileName = selectedFileName;
+
+            const titleEl = document.getElementById('modal-album-title');
+            const linkEl = document.getElementById('modal-pdf-direct-link');
+            if (titleEl) titleEl.textContent = `work/${currentLoadedFileName} — Wedding Album Preview`;
+            if (linkEl) linkEl.href = WORK_FOLDER_PATH + currentLoadedFileName;
+
+            currentSpreadIndex = 0;
+            renderCurrentSpread();
+
+            const modal = document.getElementById('album-viewer-modal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeAlbumViewerModal() {
+            document.getElementById('album-viewer-modal').classList.add('hidden');
+        }
+
+        function openAssetTesterModal() {
+            document.getElementById('asset-tester-modal').classList.remove('hidden');
+        }
+
+        function closeAssetTesterModal() {
+            document.getElementById('asset-tester-modal').classList.add('hidden');
+        }
+
+        // Live Local Image Preview Helper
+        function previewLocalImage(event, imgElementId, fallbackElementId) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById(imgElementId);
+                const fallback = document.getElementById(fallbackElementId);
+                if (img) {
+                    img.src = e.target.result;
+                    img.style.display = 'block';
+                }
+                if (fallback) fallback.classList.add('hidden');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function previewLogoBoth(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                ['main-brand-logo', 'hero-emblem-logo'].forEach(id => {
+                    const img = document.getElementById(id);
+                    if (img) {
+                        img.src = e.target.result;
+                        img.style.display = 'block';
+                    }
+                });
+                const svgFallback = document.getElementById('logo-fallback-svg');
+                const heroFallback = document.getElementById('hero-emblem-fallback');
+                if (svgFallback) svgFallback.classList.add('hidden');
+                if (heroFallback) heroFallback.classList.add('hidden');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Copy JSON snippet helper
+        function copyJsonTemplate() {
+            const snippet = `, {\n  fileName: "NEW_ALBUM.pdf",\n  title: "New Wedding Album",\n  category: "album",\n  badge: "Wedding PDF",\n  description: "Akanksha Studio Wedding Album Design."\n}`;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = snippet;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            if (event && event.currentTarget) {
+                const btn = event.currentTarget;
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = `<i class="fas fa-check text-green-400"></i> Copied! Paste in portfolioWorkData`;
+                setTimeout(() => { btn.innerHTML = originalHTML; }, 2500);
+            }
+        }
+
+        // Safely calculate and display the exact line number of `portfolioWorkData` (works even if helper box is commented out)
+        function detectPortfolioJsonLineNumber() {
+            const fullHtml = document.documentElement.outerHTML;
+            const lines = fullHtml.split('\n');
+            let foundLine = 485;
+            for (let i = 0; i < lines.length; i++) {
+                if (lines[i].includes('const portfolioWorkData = [')) {
+                    foundLine = i + 1;
+                    break;
+                }
+            }
+            const badgeEl = document.getElementById('exact-line-badge');
+            const inlineEl = document.getElementById('exact-line-inline');
+            const modalEl = document.getElementById('modal-line-num');
+            if (badgeEl) badgeEl.textContent = `Line #${foundLine}`;
+            if (inlineEl) inlineEl.textContent = `Line ${foundLine}`;
+            if (modalEl) modalEl.textContent = `Line #${foundLine}`;
+        }
+
+        // Initialize Page
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+        renderPortfolio('all');
+        detectPortfolioJsonLineNumber();
+
+        // Mobile Menu Toggle with Icon Switch
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileIcon = document.getElementById('mobile-menu-icon');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                if (mobileIcon) {
+                    mobileIcon.className = isHidden ? 'fas fa-bars text-lg' : 'fas fa-times text-lg text-gold-400';
+                }
+            });
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    if (mobileIcon) mobileIcon.className = 'fas fa-bars text-lg';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
